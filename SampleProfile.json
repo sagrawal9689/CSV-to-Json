@@ -1,0 +1,93 @@
+{
+  "compatible_device_type": "Quintron_Aria",
+  "description": "Default Profile for Quintron Aria device",
+  "name": "sample_quintron_aria_device_settings",
+  "product_additional_info": "",
+  "product_category": "Healthcare",
+  "product_make": "Quintron",
+  "version": "1.0",
+  "product_model": "Aria",
+  "profile_objects": {
+    "sensor_configuration": [
+      {
+        "port": "QT_ARIA_CO2_SENSOR",
+        "config": {
+          "datapoints": [
+            {
+              "name": "CO2 Sample Reading",
+              "datatype": "float",
+              "readonly": true,
+              "writeonly": false,
+              "datapoint_type": "QT_ARIA_CO2_SAMPLE",
+              "unit": "percent"
+            },
+            {
+              "name": "CO2 Calibration Reading",
+              "datatype": "float",
+              "readonly": true,
+              "writeonly": false,
+              "datapoint_type": "QT_ARIA_CO2_CAL",
+              "unit": "percent"
+            }
+          ],
+          "module_meta": {
+            "name": "Aria CO2 Sensor",
+            "version": "1.0",
+            "description": "Aria CO2 Sensor Module"
+          },
+          "sensor_type": "qt_aria_co2_sensor"
+        }
+      },
+      {
+        "port": "QT_ARIA_CH4_SENSOR",
+        "config": {
+          "datapoints": [
+            {
+              "name": "CH4 Sample Reading",
+              "datatype": "float",
+              "readonly": true,
+              "writeonly": false,
+              "datapoint_type": "QT_ARIA_CH4_SAMPLE",
+              "unit": "ppm"
+            },
+            {
+              "name": "CH4 Calibration Reading",
+              "datatype": "float",
+              "readonly": true,
+              "writeonly": false,
+              "datapoint_type": "QT_ARIA_CH4_CAL",
+              "unit": "ppm"
+            }
+          ],
+          "module_meta": {
+            "name": "Aria CH4 Sensor",
+            "version": "1.0",
+            "description": "Aria CH4 Sensor Module"
+          },
+          "sensor_type": "qt_aria_ch4_sensor"
+        }
+      },
+      {
+        "port": "QT_ARIA_ROOM_TEMPERATURE",
+        "config": {
+          "datapoints": [
+            {
+              "name": "Room Temperature",
+              "datatype": "float",
+              "readonly": true,
+              "writeonly": false,
+              "datapoint_type": "QT_ARIA_ROOM_TEMPERATURE",
+              "unit": "degree-C"
+            }
+          ],
+          "module_meta": {
+            "name": "Aria Room Temperature Sensor",
+            "version": "1.0",
+            "description": "Aria Room Temperature Sensor Module"
+          },
+          "sensor_type": "qt_aria_room_temperature"
+        }
+      }
+    ]
+  }
+}
